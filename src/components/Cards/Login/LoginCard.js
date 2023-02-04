@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Login.css"
 
-export default function Login()
+export default function LoginCard()
 {
   return (
     <div className='loginbody'>
