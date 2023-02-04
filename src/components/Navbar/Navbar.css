@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ebebf1;
+  background-color: #ffffff;
   width: 100vw;
   height: 9vh;
   display: flex;
@@ -26,8 +26,8 @@
 
 .nav-logo {
   background: rgb(87, 123, 221);
-  background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgba(252, 125, 33, 1) 46%, rgba(252, 125, 33, 1) 60%);
-
+  background: #684EEA;
+  visibility: hidden;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,8 +79,8 @@
 }
 
 .nav-item:hover {
-  background: rgb(87, 123, 221);
-  background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgba(252, 125, 33, 1) 94%);
+  /* background: rgb(87, 123, 221); */
+  background:  #684EEA;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,8 +90,8 @@
 .nav-item:hover:after {
   width: 75%;
   margin-left: 15px;
-  background: rgb(87, 123, 221);
-  background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgb(209, 117, 51) 26%, rgb(219, 127, 61) 40%);
+  /* background: rgb(87, 123, 221); */
+  /* background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgb(209, 117, 51) 26%, rgb(219, 127, 61) 40%); */
 }
 
 #homelist:hover:after {
