@@ -17,7 +17,7 @@ export default function Scappers() {
 			<div className="flex flex-row flex-wrap items-center gap-5 mb-7 mt-7 xs:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap xl:flex-nowrap">
 
       <Link
-					to="/dashboard/workflows/peer-analysis"
+					to="/scrape/phone"
 					className="w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-row items-center gap-8 px-6 h-[217px] border border-gray-200 shadow-md hover:shadow-lg transition-all rounded-xl hover:border-purpl/50 hover:bg-purpl/10 shadow-gray-300/30"
 				>
 					<img
