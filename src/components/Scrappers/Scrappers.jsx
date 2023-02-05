@@ -1,8 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useEffect} from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Scrapper.css";
 
 export default function Scappers() {
+	const navigate = useNavigate()
+	useEffect(() =>{
+		if(sessionStorage.getItem("token") == null || sessionStorage.getItem("token") == null|| sessionStorage.getItem("token").length<9  ){
+			navigate('/login')
+		}
+	},[])
   return (
     <div className="bg-[#FEFEFF] h-full mx-auto w-full xs:w-full sm:w-full md:w-3/4 lg:w-4/5 xl:w-4/5 flex flex-col pt-9">
 			<div className="flex flex-row w-full">

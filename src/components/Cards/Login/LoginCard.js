@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Login.css"
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom/dist';
+import { useNavigate, Link } from 'react-router-dom/dist';
 const port = "http://localhost:8000";
 
 export default function LoginCard()
@@ -46,7 +46,7 @@ export default function LoginCard()
             <input type="submit" value="Signin"/>
         </div>
     <div id="linksParent">
-        <a>Sign in</a>
+        <Link to='/signup'>Sign up</Link>
     </div>
     </form>
 </div>

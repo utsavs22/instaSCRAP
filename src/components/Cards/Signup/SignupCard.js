@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom/dist';
+import { useNavigate, Link } from 'react-router-dom/dist';
 import './SignupCard.css'
 const port = "http://localhost:8000";
 
@@ -48,7 +48,7 @@ function SignupCard() {
             <input type="submit" value="Signup"/>
         </div>
     <div id="linksParent">
-        <a>Sign in</a>
+        <Link to = "/login">Sign in</Link>
     </div>
     </form>
 </div>
