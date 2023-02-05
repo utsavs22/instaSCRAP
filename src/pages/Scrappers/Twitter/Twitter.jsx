@@ -86,7 +86,20 @@ const Twitter = () => {
             }),
           });
           const json = await resp.json();
-          console.log(json)
+
+          let obj = {};
+          json.forEach((e) =>{
+            let s = 0;
+            e.results.forEach((e) =>{
+                s+=e.probabilities['1'];
+            })
+        
+            let name = e.label;
+            obj[name] = s/arr2.length;
+            s = 0;
+        
+          })
+          console.log(obj) // final object with average values
     };
 
 
