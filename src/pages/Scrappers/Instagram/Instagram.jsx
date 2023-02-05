@@ -68,12 +68,17 @@ function Instagram() {
       
     }
   return (
-    <div>
-        <input type="text" name = "username" placeholder='Enter phone' onChange={handleOnChange} />
-        <button onClick={handleOnClick} style={{width:"150px", background:"black"}}>Send data</button>
-        <button onClick={handleDownload} disabled={isDisabled} style={{width:"150px", background:"orange"}}>Send data</button>
+    <div className='phonescrap'>
+        <input type="text" name = "username" placeholder='Enter Instagram User Name' onChange={handleOnChange} className='enterphone'/>
+        <div className='phonebuttons'>
+          <div className='button1'>
+            <button onClick={handleOnClick} style={{width:"150px"}}>Get Data</button>
+          </div>
+          <div className='button2'>
+            <button onClick={handleDownload} disabled={isDisabled}  style={{width:"150px"}}>Download Data</button>
+          </div>
+        </div>
     </div>
-
   )
 }
 

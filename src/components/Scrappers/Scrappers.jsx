@@ -9,7 +9,7 @@ export default function Scappers() {
 				<div className="flex flex-col items-start">
 					<h2 className="mb-2 text-2xl font-semibold">ScrapperOP</h2>
 					<p className="text-muted-dark-gray">
-						Get rich analysis for any private or public company in just 3 steps
+						Get rich analysis for any public account.
 					</p>
 				</div>
 			</div>
@@ -27,13 +27,13 @@ export default function Scappers() {
 					<div className="flex flex-col items-start gap-4">
 						<h3 className="text-xl font-semibold">Phone Number Scrapper</h3>
 						<p className="text-sm font-medium text-gray-500">
-            Easily gather insights and information from Twitter with a user-friendly scrapper that simplifies the data extraction process.
+						Effortlessly gather accurate phone numbers with a user-friendly scrapper that streamlines the data extraction process for maximum efficiency
 						</p>
 					</div>
 				</Link>
 
         <Link
-					to="/dashboard/workflows/peer-analysis"
+					to="/scrape/twitter"
 					className="w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-row items-center gap-8 px-6 h-[217px] border border-gray-200 shadow-md hover:shadow-lg transition-all rounded-xl hover:border-purpl/50 hover:bg-purpl/10 shadow-gray-300/30"
 				>
 					<img
@@ -67,7 +67,7 @@ export default function Scappers() {
       
 
         <Link
-					to="/dashboard"
+					to="/scrape/linkedin"
 					className="relative w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-row items-center gap-8 px-6 h-[217px] border border-gray-200 shadow-md hover:shadow-lg transition-all rounded-xl shadow-gray-300/30 hover:border-purpl/50 hover:bg-purpl/10"
 				>
 					<img
@@ -83,7 +83,7 @@ export default function Scappers() {
 				</Link>
 
 				<Link
-					to="/dashboard/workflows/market-snapshot"
+					to="/scrape/facebook"
 					className="w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-row items-center gap-8 px-6 h-[217px] border border-gray-200 shadow-md hover:shadow-lg transition-all rounded-xl shadow-gray-300/30 hover:border-purpl/50 hover:bg-purpl/10"
 				>
 					<img
@@ -105,7 +105,7 @@ export default function Scappers() {
       
 
       <Link
-					to="/dashboard/workflows/company-deep-dive"
+					to="/scrape/instagram"
 					className="w-full xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex flex-row items-center gap-8 px-6 h-[217px] border border-gray-200 shadow-md hover:shadow-lg transition-all rounded-xl shadow-gray-300/30 hover:border-purpl/50 hover:bg-purpl/10"
 				>
 					<img

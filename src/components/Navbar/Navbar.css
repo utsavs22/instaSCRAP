@@ -27,7 +27,7 @@
 .nav-logo {
   background: rgb(87, 123, 221);
   background: #684EEA;
-  visibility: hidden;
+  /* visibility: hidden; */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

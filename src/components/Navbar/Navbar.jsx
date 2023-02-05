@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
-  Link,
   Button,
   Element,
   Events,
@@ -8,6 +7,7 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -19,55 +19,20 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <a
+          <Link
             className="nav-logo"
+            to='/'
             style={{ maxWidth: "450px" }}
             onClick={() => {
               scroll.scrollToTop();
             }}
           >
-            <h3>ScrapperOP</h3>
-          </a>
+            <img src="https://i.postimg.cc/HxjVzfgQ/home.png" alt="/" style={{ height: "25px" }}/>
+          </Link>
 
           <div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              {/* <li className="nav-item"></li>
-              <li className="nav-item" id="homelist">
-                <a
-                  className="nav-links"
-                  onClick={() => {
-                    scroll.scrollToTop();
-                  }}
-                >
-                  Home
-                </a>
-              </li>
-
-              <li className="nav-item" id="homelist">
-                <Link
-                  activeClass="active"
-                  to="about"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="nav-links"
-                >
-                  How To Use
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  activeClass="active"
-                  to="download"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="nav-links"
-                >
-                  Block
-                </Link>
-              </li> */}
+              
               <li className="nav-item">
                 <Link
                   activeClass="active"

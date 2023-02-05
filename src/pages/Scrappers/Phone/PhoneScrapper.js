@@ -1,5 +1,5 @@
 import React,{useState}from 'react'
-import Papa from 'papaparse'
+import "./PhoneScrapper.css";
 import { Parser } from '@json2csv/plainjs';
 const port = "http://localhost:8000";
 
@@ -62,11 +62,16 @@ function PhoneScrapper() {
       
     }
   return (
-    <div>
-        <input type="text" name = "number" placeholder='Enter phone' onChange={handleOnChange} />
-        <h1>sdhi</h1>
-        <button onClick={handleOnClick} style={{width:"150px", background:"black"}}>Send data</button>
-        <button onClick={handleDownload} disabled={isDisabled}  style={{width:"150px", background:"orange"}}>Send data</button>
+    <div className='phonescrap'>
+        <input type="text" name = "number" placeholder='Enter phone' onChange={handleOnChange} className='enterphone'/>
+        <div className='phonebuttons'>
+          <div className='button1'>
+            <button onClick={handleOnClick} style={{width:"150px"}}>Get Data</button>
+          </div>
+          <div className='button2'>
+            <button onClick={handleDownload} disabled={isDisabled}  style={{width:"150px"}}>Download Data</button>
+          </div>
+        </div>
     </div>
 
   )
