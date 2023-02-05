@@ -27,21 +27,21 @@ const downloadFacebookData = () => {
 };
 
   return (
-    <div>
-      <h1>Enter username:</h1>
+    <div className='phonescrap'>
       <input
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        placeholder="Enter Facebook Username"
       />
       <hr />
       <h1>Facebook Profile Information:</h1>
       <pre>{JSON.stringify(facebookProfile, null, 2)}</pre>
+      <div className='phonebuttons'>
+        <button onClick={handleFacebookProfile} style={{width:"250px"}}>Get Facebook Profile</button>
       
-      <button onClick={handleFacebookProfile}>Get Facebook Profile</button>
-     
-      <button onClick={downloadFacebookData}>Download Facebook Profile</button>
-   
+        <button onClick={downloadFacebookData} style={{width:"250px"}}>Download Facebook Profile</button>
+      </div>
       <hr />
     </div>
   );

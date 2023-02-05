@@ -94,13 +94,11 @@ const Twitter = () => {
 
     return (
         <div className='phonescrap'>
-
-            <h1>Enter username:</h1>
             <input
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Enter username:"
+                placeholder="Enter Twitter Username"
             />
             <hr />
             <div className='phonebuttons' >
