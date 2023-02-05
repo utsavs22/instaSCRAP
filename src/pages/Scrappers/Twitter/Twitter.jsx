@@ -100,6 +100,15 @@ const Twitter = () => {
         
           })
           console.log(obj) // final object with average values
+
+          const parser = new Parser();
+          const csv = parser.parse(obj);
+          // const csv = Papa.unparse(dataa);
+          const blob = new Blob([csv], { type: "text/csv" });
+          const link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = "hatespeech.csv";
+          link.click();
     };
 
 
